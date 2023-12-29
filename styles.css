@@ -1,8 +1,10 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   background-color: #f0f0f0;
 }
@@ -10,4 +12,21 @@ body {
 #gameCanvas {
   background-color: #000;
   border: 1px solid #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.controls button {
+  width: 70px;
+  height: 70px;
+  font-size: 26px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

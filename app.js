@@ -6,6 +6,19 @@ const columns = canvas.width / scale;
 
 var snake;
 
+document
+  .getElementById("btnUp")
+  .addEventListener("click", () => snake.changeDirection("Up"));
+document
+  .getElementById("btnDown")
+  .addEventListener("click", () => snake.changeDirection("Down"));
+document
+  .getElementById("btnLeft")
+  .addEventListener("click", () => snake.changeDirection("Left"));
+document
+  .getElementById("btnRight")
+  .addEventListener("click", () => snake.changeDirection("Right"));
+
 (function setup() {
   snake = new Snake();
   fruit = new Fruit();
